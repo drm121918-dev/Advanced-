@@ -55,16 +55,8 @@ async def show_random_emojis(message):
     return emoji_message
 
 # Define the owner's user ID
-OWNER_ID = 7062964338
+OWNER_ID = 6090172625
 
-# Initialize the database instance globally
-try:
-    db = Database(DATABASE_URL)
-except Exception as e:
-    logging.error(f"Failed to initialize database: {e}")
-    sys.exit(1)
-
-AUTH_CHANNEL = -1002752608747
 
 # Function to check if a user is authorized
 
