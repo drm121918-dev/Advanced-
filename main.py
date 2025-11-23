@@ -67,8 +67,6 @@ except Exception as e:
 AUTH_CHANNEL = -1002752608747
 
 # Function to check if a user is authorized
-def is_authorized(user_id: int) -> bool:
-    return user_id == OWNER_ID or db.is_sudo_user(user_id) or user_id == AUTH_CHANNEL
 
 bot = Client(
     "bot",
